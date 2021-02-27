@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import view.Alumno;
 import view.Catequista;
 import view.Principal;
+import view.Tutores;
 
 /**
  *
@@ -45,6 +46,15 @@ public class CtrPrincipal implements ActionListener{
                 this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                 this.principal.panelContenido.revalidate();
                 this.principal.panelContenido.repaint();
+            }else{
+                if(arg0.getSource()==this.principal.btnTutor){
+                    Tutores tutores = new Tutores();
+                    this.principal.contenido.remove(this.principal.panelContenido);
+                    this.principal.panelContenido = tutores;
+                    this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
+                    this.principal.panelContenido.revalidate();
+                    this.principal.panelContenido.repaint();
+                }
             }
         }
     }

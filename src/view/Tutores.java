@@ -9,12 +9,12 @@ package view;
  *
  * @author Gerardo
  */
-public class Alumno extends javax.swing.JPanel {
+public class Tutores extends javax.swing.JPanel {
 
     /**
-     * Creates new form Alumno
+     * Creates new form Tutores
      */
-    public Alumno() {
+    public Tutores() {
         initComponents();
     }
 
@@ -28,6 +28,7 @@ public class Alumno extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        btnLimpiar = new javax.swing.JButton();
         txfBuscarIdenti = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -37,26 +38,36 @@ public class Alumno extends javax.swing.JPanel {
         txfIdentAlumno = new javax.swing.JTextField();
         txfNombreA = new javax.swing.JTextField();
         txfApeA = new javax.swing.JTextField();
-        txfEdadA = new javax.swing.JTextField();
         jcomGradoA = new javax.swing.JComboBox<>();
-        btnAgregarA = new javax.swing.JButton();
+        txfApeA1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
         btnEliminarA = new javax.swing.JButton();
+        btnAgregarA = new javax.swing.JButton();
         btnActualizarA = new javax.swing.JButton();
-        btnLimpiar = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(810, 507));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 32, 96));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("INFORMACIÓN ALUMNOS");
+        jLabel1.setText("INFORMACIÓN TUTORES");
+
+        btnLimpiar.setBackground(new java.awt.Color(150, 215, 244));
+        btnLimpiar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(0, 32, 96));
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.setBorder(null);
+        btnLimpiar.setFocusable(false);
+        btnLimpiar.setPreferredSize(new java.awt.Dimension(45, 25));
 
         txfBuscarIdenti.setBackground(new java.awt.Color(225, 255, 250));
         txfBuscarIdenti.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txfBuscarIdenti.setForeground(new java.awt.Color(0, 32, 96));
         txfBuscarIdenti.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txfBuscarIdenti.setText("Identificador");
+        txfBuscarIdenti.setText("Matrícula del alumno");
         txfBuscarIdenti.setBorder(null);
         txfBuscarIdenti.setPreferredSize(new java.awt.Dimension(62, 25));
 
@@ -109,7 +120,7 @@ public class Alumno extends javax.swing.JPanel {
         txfIdentAlumno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txfIdentAlumno.setForeground(new java.awt.Color(0, 32, 96));
         txfIdentAlumno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txfIdentAlumno.setText("Identificador");
+        txfIdentAlumno.setText("Matrícula del alumno");
         txfIdentAlumno.setBorder(null);
         txfIdentAlumno.setPreferredSize(new java.awt.Dimension(62, 25));
 
@@ -117,7 +128,7 @@ public class Alumno extends javax.swing.JPanel {
         txfNombreA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txfNombreA.setForeground(new java.awt.Color(0, 32, 96));
         txfNombreA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txfNombreA.setText("Nombre completo");
+        txfNombreA.setText("Nombre completo tutor");
         txfNombreA.setBorder(null);
         txfNombreA.setPreferredSize(new java.awt.Dimension(62, 25));
 
@@ -125,22 +136,39 @@ public class Alumno extends javax.swing.JPanel {
         txfApeA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txfApeA.setForeground(new java.awt.Color(0, 32, 96));
         txfApeA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txfApeA.setText("Apellido Completo");
+        txfApeA.setText("Apellido completo tutor");
         txfApeA.setBorder(null);
         txfApeA.setPreferredSize(new java.awt.Dimension(62, 25));
-
-        txfEdadA.setBackground(new java.awt.Color(225, 255, 250));
-        txfEdadA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txfEdadA.setForeground(new java.awt.Color(0, 32, 96));
-        txfEdadA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txfEdadA.setText("Edad");
-        txfEdadA.setBorder(null);
-        txfEdadA.setPreferredSize(new java.awt.Dimension(62, 25));
 
         jcomGradoA.setBackground(new java.awt.Color(225, 255, 250));
         jcomGradoA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcomGradoA.setForeground(new java.awt.Color(0, 32, 96));
         jcomGradoA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
+
+        txfApeA1.setBackground(new java.awt.Color(225, 255, 250));
+        txfApeA1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfApeA1.setForeground(new java.awt.Color(0, 32, 96));
+        txfApeA1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfApeA1.setText("Teléfono/celular");
+        txfApeA1.setBorder(null);
+        txfApeA1.setPreferredSize(new java.awt.Dimension(62, 25));
+
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 32, 96));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Edad");
+
+        jCheckBox1.setBackground(new java.awt.Color(150, 215, 244));
+        jCheckBox1.setForeground(new java.awt.Color(0, 32, 96));
+        jCheckBox1.setText("Casado(a)");
+
+        jCheckBox2.setBackground(new java.awt.Color(150, 215, 244));
+        jCheckBox2.setForeground(new java.awt.Color(0, 32, 96));
+        jCheckBox2.setText("Viuda(o)");
+
+        jCheckBox3.setBackground(new java.awt.Color(150, 215, 244));
+        jCheckBox3.setForeground(new java.awt.Color(0, 32, 96));
+        jCheckBox3.setText("Soltero(a)");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -150,13 +178,27 @@ public class Alumno extends javax.swing.JPanel {
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jcomGradoA, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(42, 42, 42)
-                        .addComponent(txfEdadA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(txfApeA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txfNombreA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txfIdentAlumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txfApeA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txfNombreA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txfIdentAlumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(54, 54, 54)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jcomGradoA, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(41, 41, 41)))
+                        .addGap(31, 31, 31))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jCheckBox1)
+                                .addGap(29, 29, 29)
+                                .addComponent(jCheckBox3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox2))
+                            .addComponent(txfApeA1, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(28, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,19 +210,18 @@ public class Alumno extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(txfApeA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(txfApeA1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txfEdadA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jcomGradoA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                    .addComponent(jCheckBox1)
+                    .addComponent(jCheckBox2)
+                    .addComponent(jCheckBox3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jcomGradoA))
+                .addGap(22, 22, 22))
         );
-
-        btnAgregarA.setBackground(new java.awt.Color(150, 215, 244));
-        btnAgregarA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        btnAgregarA.setForeground(new java.awt.Color(0, 32, 96));
-        btnAgregarA.setText("Agregar");
-        btnAgregarA.setBorder(null);
-        btnAgregarA.setFocusable(false);
-        btnAgregarA.setPreferredSize(new java.awt.Dimension(45, 25));
 
         btnEliminarA.setBackground(new java.awt.Color(150, 215, 244));
         btnEliminarA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -190,6 +231,14 @@ public class Alumno extends javax.swing.JPanel {
         btnEliminarA.setFocusable(false);
         btnEliminarA.setPreferredSize(new java.awt.Dimension(45, 25));
 
+        btnAgregarA.setBackground(new java.awt.Color(150, 215, 244));
+        btnAgregarA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnAgregarA.setForeground(new java.awt.Color(0, 32, 96));
+        btnAgregarA.setText("Agregar");
+        btnAgregarA.setBorder(null);
+        btnAgregarA.setFocusable(false);
+        btnAgregarA.setPreferredSize(new java.awt.Dimension(45, 25));
+
         btnActualizarA.setBackground(new java.awt.Color(150, 215, 244));
         btnActualizarA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         btnActualizarA.setForeground(new java.awt.Color(0, 32, 96));
@@ -198,49 +247,37 @@ public class Alumno extends javax.swing.JPanel {
         btnActualizarA.setFocusable(false);
         btnActualizarA.setPreferredSize(new java.awt.Dimension(45, 25));
 
-        btnLimpiar.setBackground(new java.awt.Color(150, 215, 244));
-        btnLimpiar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        btnLimpiar.setForeground(new java.awt.Color(0, 32, 96));
-        btnLimpiar.setText("Limpiar");
-        btnLimpiar.setBorder(null);
-        btnLimpiar.setFocusable(false);
-        btnLimpiar.setPreferredSize(new java.awt.Dimension(45, 25));
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAgregarA, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnEliminarA, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnActualizarA, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(9, 9, 9)))
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(txfBuscarIdenti, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                                .addGap(27, 27, 27)
-                                .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(34, 34, 34))
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAgregarA, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEliminarA, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnActualizarA, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                        .addGap(1, 1, 1)))
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(txfBuscarIdenti, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE)
+                            .addGap(27, 27, 27)
+                            .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(32, 32, 32)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -248,17 +285,16 @@ public class Alumno extends javax.swing.JPanel {
                     .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(71, 71, 71)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnAgregarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEliminarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnActualizarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(22, 22, 22)
-                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnAgregarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEliminarA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnActualizarA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(12, 12, 12))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -269,15 +305,19 @@ public class Alumno extends javax.swing.JPanel {
     public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnEliminarA;
     public javax.swing.JButton btnLimpiar;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
-    public javax.swing.JComboBox<String> jcomGradoA;
+    private javax.swing.JComboBox<String> jcomGradoA;
     public javax.swing.JTable jtlAlumnos;
     public javax.swing.JTextField txfApeA;
+    public javax.swing.JTextField txfApeA1;
     public javax.swing.JTextField txfBuscarIdenti;
-    public javax.swing.JTextField txfEdadA;
     public javax.swing.JTextField txfIdentAlumno;
     public javax.swing.JTextField txfNombreA;
     // End of variables declaration//GEN-END:variables

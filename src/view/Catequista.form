@@ -29,11 +29,11 @@
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton5" max="32767" attributes="0"/>
+                      <Component id="btnAgregarCat" max="32767" attributes="0"/>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton3" max="32767" attributes="0"/>
+                      <Component id="btnEliminarCat" max="32767" attributes="0"/>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton4" max="32767" attributes="0"/>
+                      <Component id="btnActualizarCat" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -42,9 +42,9 @@
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jTextField1" max="32767" attributes="0"/>
+                              <Component id="txfBuscarIdenti" max="32767" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="121" max="-2" attributes="0"/>
+                              <Component id="btnBuscar" min="-2" pref="121" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jPanel2" max="32767" attributes="0"/>
@@ -52,7 +52,7 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="334" pref="334" max="-2" attributes="0"/>
-                      <Component id="jButton2" pref="120" max="32767" attributes="0"/>
+                      <Component id="btnLimpiar" pref="120" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -67,8 +67,8 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextField1" alignment="3" max="32767" attributes="0"/>
-                  <Component id="jButton1" alignment="3" max="32767" attributes="0"/>
+                  <Component id="txfBuscarIdenti" alignment="3" max="32767" attributes="0"/>
+                  <Component id="btnBuscar" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -79,10 +79,10 @@
                   </Group>
               </Group>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton2" alignment="3" max="32767" attributes="0"/>
-                  <Component id="jButton5" alignment="3" max="32767" attributes="0"/>
-                  <Component id="jButton3" alignment="3" max="32767" attributes="0"/>
-                  <Component id="jButton4" alignment="3" max="32767" attributes="0"/>
+                  <Component id="btnLimpiar" alignment="3" max="32767" attributes="0"/>
+                  <Component id="btnAgregarCat" alignment="3" max="32767" attributes="0"/>
+                  <Component id="btnEliminarCat" alignment="3" max="32767" attributes="0"/>
+                  <Component id="btnActualizarCat" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
           </Group>
@@ -103,16 +103,16 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextField5" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txfDireccionCat" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txfTelCat" alignment="1" max="32767" attributes="0"/>
+                      <Component id="txfApeCat" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txfIdentiCat" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jComboBox1" min="-2" pref="105" max="-2" attributes="0"/>
+                          <Component id="jcomGradoCat" min="-2" pref="105" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                          <Component id="jTextField6" pref="103" max="32767" attributes="0"/>
+                          <Component id="txfEdadCat" pref="103" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jTextField7" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txfNombreCat" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
@@ -122,27 +122,27 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField2" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txfIdentiCat" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jTextField7" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txfNombreCat" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace pref="17" max="32767" attributes="0"/>
-                  <Component id="jTextField4" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txfApeCat" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jTextField5" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="txfTelCat" min="-2" pref="34" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jComboBox1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="jTextField6" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="jcomGradoCat" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="txfEdadCat" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jTextField8" min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="txfDireccionCat" min="-2" pref="33" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="txfIdentiCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -162,8 +162,11 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="txfApeCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -183,8 +186,11 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JTextField" name="txfTelCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -204,8 +210,11 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="jcomGradoCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -229,9 +238,10 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField6">
+        <Component class="javax.swing.JTextField" name="txfEdadCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -251,8 +261,11 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField8">
+        <Component class="javax.swing.JTextField" name="txfDireccionCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -272,8 +285,11 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField7">
+        <Component class="javax.swing.JTextField" name="txfNombreCat">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -293,6 +309,9 @@
               <Dimension value="[62, 25]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
@@ -308,7 +327,7 @@
         <Property name="text" type="java.lang.String" value="INFORMACI&#xd3;N CATEQUISTAS"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txfBuscarIdenti">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -328,8 +347,11 @@
           <Dimension value="[62, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnBuscar">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f4" green="d7" red="96" type="rgb"/>
@@ -349,6 +371,9 @@
           <Dimension value="[45, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Properties>
@@ -385,7 +410,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable2">
+            <Component class="javax.swing.JTable" name="jtlCat">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="fa" green="ff" red="e1" type="rgb"/>
@@ -405,12 +430,15 @@
                   </Table>
                 </Property>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="btnLimpiar">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f4" green="d7" red="96" type="rgb"/>
@@ -430,8 +458,11 @@
           <Dimension value="[45, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="btnEliminarCat">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f4" green="d7" red="96" type="rgb"/>
@@ -451,8 +482,11 @@
           <Dimension value="[45, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="btnActualizarCat">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f4" green="d7" red="96" type="rgb"/>
@@ -472,8 +506,11 @@
           <Dimension value="[45, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="btnAgregarCat">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="f4" green="d7" red="96" type="rgb"/>
@@ -493,6 +530,9 @@
           <Dimension value="[45, 25]"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

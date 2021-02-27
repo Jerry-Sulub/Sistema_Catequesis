@@ -30,80 +30,80 @@ public class Catequista extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        txfIdentiCat = new javax.swing.JTextField();
+        txfApeCat = new javax.swing.JTextField();
+        txfTelCat = new javax.swing.JTextField();
+        jcomGradoCat = new javax.swing.JComboBox<>();
+        txfEdadCat = new javax.swing.JTextField();
+        txfDireccionCat = new javax.swing.JTextField();
+        txfNombreCat = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txfBuscarIdenti = new javax.swing.JTextField();
+        btnBuscar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jtlCat = new javax.swing.JTable();
+        btnLimpiar = new javax.swing.JButton();
+        btnEliminarCat = new javax.swing.JButton();
+        btnActualizarCat = new javax.swing.JButton();
+        btnAgregarCat = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(150, 215, 244));
 
-        jTextField2.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setText("Identificador");
-        jTextField2.setBorder(null);
-        jTextField2.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfIdentiCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfIdentiCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfIdentiCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfIdentiCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfIdentiCat.setText("Identificador");
+        txfIdentiCat.setBorder(null);
+        txfIdentiCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jTextField4.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setText("Apellido completo");
-        jTextField4.setBorder(null);
-        jTextField4.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfApeCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfApeCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfApeCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfApeCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfApeCat.setText("Apellido completo");
+        txfApeCat.setBorder(null);
+        txfApeCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jTextField5.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setText("Teléfono/Celular");
-        jTextField5.setBorder(null);
-        jTextField5.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfTelCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfTelCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfTelCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfTelCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfTelCat.setText("Teléfono/Celular");
+        txfTelCat.setBorder(null);
+        txfTelCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jComboBox1.setBackground(new java.awt.Color(225, 255, 250));
-        jComboBox1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(0, 32, 96));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
+        jcomGradoCat.setBackground(new java.awt.Color(225, 255, 250));
+        jcomGradoCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcomGradoCat.setForeground(new java.awt.Color(0, 32, 96));
+        jcomGradoCat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6" }));
 
-        jTextField6.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setText("Edad");
-        jTextField6.setBorder(null);
-        jTextField6.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfEdadCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfEdadCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfEdadCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfEdadCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfEdadCat.setText("Edad");
+        txfEdadCat.setBorder(null);
+        txfEdadCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jTextField8.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField8.setText("Dirección");
-        jTextField8.setBorder(null);
-        jTextField8.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfDireccionCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfDireccionCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfDireccionCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfDireccionCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfDireccionCat.setText("Dirección");
+        txfDireccionCat.setBorder(null);
+        txfDireccionCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jTextField7.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setText("Nombre completo");
-        jTextField7.setBorder(null);
-        jTextField7.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfNombreCat.setBackground(new java.awt.Color(225, 255, 250));
+        txfNombreCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfNombreCat.setForeground(new java.awt.Color(0, 32, 96));
+        txfNombreCat.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfNombreCat.setText("Nombre completo");
+        txfNombreCat.setBorder(null);
+        txfNombreCat.setPreferredSize(new java.awt.Dimension(62, 25));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -112,34 +112,34 @@ public class Catequista extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txfDireccionCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txfTelCat, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txfApeCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txfIdentiCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jcomGradoCat, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(41, 41, 41)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE))
-                    .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(txfEdadCat, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE))
+                    .addComponent(txfNombreCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(40, 40, 40))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txfIdentiCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txfNombreCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txfApeCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txfTelCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcomGradoCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txfEdadCat, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txfDireccionCat, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36))
         );
 
@@ -148,28 +148,28 @@ public class Catequista extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("INFORMACIÓN CATEQUISTAS");
 
-        jTextField1.setBackground(new java.awt.Color(225, 255, 250));
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 32, 96));
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("Identificador");
-        jTextField1.setBorder(null);
-        jTextField1.setPreferredSize(new java.awt.Dimension(62, 25));
+        txfBuscarIdenti.setBackground(new java.awt.Color(225, 255, 250));
+        txfBuscarIdenti.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfBuscarIdenti.setForeground(new java.awt.Color(0, 32, 96));
+        txfBuscarIdenti.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfBuscarIdenti.setText("Identificador");
+        txfBuscarIdenti.setBorder(null);
+        txfBuscarIdenti.setPreferredSize(new java.awt.Dimension(62, 25));
 
-        jButton1.setBackground(new java.awt.Color(150, 215, 244));
-        jButton1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 32, 96));
-        jButton1.setText("Buscar");
-        jButton1.setBorder(null);
-        jButton1.setFocusable(false);
-        jButton1.setPreferredSize(new java.awt.Dimension(45, 25));
+        btnBuscar.setBackground(new java.awt.Color(150, 215, 244));
+        btnBuscar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnBuscar.setForeground(new java.awt.Color(0, 32, 96));
+        btnBuscar.setText("Buscar");
+        btnBuscar.setBorder(null);
+        btnBuscar.setFocusable(false);
+        btnBuscar.setPreferredSize(new java.awt.Dimension(45, 25));
 
         jPanel2.setBackground(new java.awt.Color(150, 215, 244));
 
-        jTable2.setBackground(new java.awt.Color(225, 255, 250));
-        jTable2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jTable2.setForeground(new java.awt.Color(0, 32, 96));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        jtlCat.setBackground(new java.awt.Color(225, 255, 250));
+        jtlCat.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jtlCat.setForeground(new java.awt.Color(0, 32, 96));
+        jtlCat.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -180,7 +180,7 @@ public class Catequista extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane2.setViewportView(jtlCat);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -199,37 +199,37 @@ public class Catequista extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton2.setBackground(new java.awt.Color(150, 215, 244));
-        jButton2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 32, 96));
-        jButton2.setText("Limpiar");
-        jButton2.setBorder(null);
-        jButton2.setFocusable(false);
-        jButton2.setPreferredSize(new java.awt.Dimension(45, 25));
+        btnLimpiar.setBackground(new java.awt.Color(150, 215, 244));
+        btnLimpiar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(0, 32, 96));
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.setBorder(null);
+        btnLimpiar.setFocusable(false);
+        btnLimpiar.setPreferredSize(new java.awt.Dimension(45, 25));
 
-        jButton3.setBackground(new java.awt.Color(150, 215, 244));
-        jButton3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 32, 96));
-        jButton3.setText("Eliminar");
-        jButton3.setBorder(null);
-        jButton3.setFocusable(false);
-        jButton3.setPreferredSize(new java.awt.Dimension(45, 25));
+        btnEliminarCat.setBackground(new java.awt.Color(150, 215, 244));
+        btnEliminarCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnEliminarCat.setForeground(new java.awt.Color(0, 32, 96));
+        btnEliminarCat.setText("Eliminar");
+        btnEliminarCat.setBorder(null);
+        btnEliminarCat.setFocusable(false);
+        btnEliminarCat.setPreferredSize(new java.awt.Dimension(45, 25));
 
-        jButton4.setBackground(new java.awt.Color(150, 215, 244));
-        jButton4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 32, 96));
-        jButton4.setText("Actualizar");
-        jButton4.setBorder(null);
-        jButton4.setFocusable(false);
-        jButton4.setPreferredSize(new java.awt.Dimension(45, 25));
+        btnActualizarCat.setBackground(new java.awt.Color(150, 215, 244));
+        btnActualizarCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnActualizarCat.setForeground(new java.awt.Color(0, 32, 96));
+        btnActualizarCat.setText("Actualizar");
+        btnActualizarCat.setBorder(null);
+        btnActualizarCat.setFocusable(false);
+        btnActualizarCat.setPreferredSize(new java.awt.Dimension(45, 25));
 
-        jButton5.setBackground(new java.awt.Color(150, 215, 244));
-        jButton5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 32, 96));
-        jButton5.setText("Agregar");
-        jButton5.setBorder(null);
-        jButton5.setFocusable(false);
-        jButton5.setPreferredSize(new java.awt.Dimension(45, 25));
+        btnAgregarCat.setBackground(new java.awt.Color(150, 215, 244));
+        btnAgregarCat.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnAgregarCat.setForeground(new java.awt.Color(0, 32, 96));
+        btnAgregarCat.setText("Agregar");
+        btnAgregarCat.setBorder(null);
+        btnAgregarCat.setFocusable(false);
+        btnAgregarCat.setPreferredSize(new java.awt.Dimension(45, 25));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -242,25 +242,25 @@ public class Catequista extends javax.swing.JPanel {
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(22, 22, 22))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnAgregarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEliminarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnActualizarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(25, 25, 25)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txfBuscarIdenti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10))
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(334, 334, 334)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)))
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)))
                 .addContainerGap())
             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -271,8 +271,8 @@ public class Catequista extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txfBuscarIdenti, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -280,33 +280,33 @@ public class Catequista extends javax.swing.JPanel {
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(6, 6, 6)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAgregarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEliminarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnActualizarCat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(12, 12, 12))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JComboBox<String> jComboBox1;
+    public javax.swing.JButton btnActualizarCat;
+    public javax.swing.JButton btnAgregarCat;
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnEliminarCat;
+    public javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    public javax.swing.JComboBox<String> jcomGradoCat;
+    public javax.swing.JTable jtlCat;
+    public javax.swing.JTextField txfApeCat;
+    public javax.swing.JTextField txfBuscarIdenti;
+    public javax.swing.JTextField txfDireccionCat;
+    public javax.swing.JTextField txfEdadCat;
+    public javax.swing.JTextField txfIdentiCat;
+    public javax.swing.JTextField txfNombreCat;
+    public javax.swing.JTextField txfTelCat;
     // End of variables declaration//GEN-END:variables
 }
