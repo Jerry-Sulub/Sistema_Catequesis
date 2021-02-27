@@ -5,6 +5,7 @@
  */
 package main;
 
+import controller.CtrPrincipal;
 import view.Principal;
 
 /**
@@ -20,6 +21,7 @@ public class SistemaCatequesis {
         // TODO code application logic here
         Principal principal = new Principal();
         principal.setVisible(true);
+        CtrPrincipal cr = new CtrPrincipal(principal);
     }
     
 }

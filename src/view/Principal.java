@@ -30,62 +30,62 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        contenido = new javax.swing.JPanel();
         menu = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnAlumno = new javax.swing.JButton();
+        btnCatequista = new javax.swing.JButton();
+        btnTutor = new javax.swing.JButton();
+        btnOracion = new javax.swing.JButton();
         menu_superior = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        content = new javax.swing.JPanel();
+        panelContenido = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setLayout(new java.awt.BorderLayout());
+        contenido.setLayout(new java.awt.BorderLayout());
 
         menu.setBackground(new java.awt.Color(0, 32, 96));
         menu.setPreferredSize(new java.awt.Dimension(125, 417));
 
-        jButton1.setBackground(new java.awt.Color(0, 32, 96));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/alumno.png"))); // NOI18N
-        jButton1.setText("Alumnos");
-        jButton1.setBorder(null);
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAlumno.setBackground(new java.awt.Color(0, 32, 96));
+        btnAlumno.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAlumno.setForeground(new java.awt.Color(255, 255, 255));
+        btnAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/alumno.png"))); // NOI18N
+        btnAlumno.setText("Alumnos");
+        btnAlumno.setBorder(null);
+        btnAlumno.setFocusable(false);
+        btnAlumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAlumno.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton3.setBackground(new java.awt.Color(0, 32, 96));
-        jButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
-        jButton3.setText("Catequistas");
-        jButton3.setBorder(null);
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCatequista.setBackground(new java.awt.Color(0, 32, 96));
+        btnCatequista.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnCatequista.setForeground(new java.awt.Color(255, 255, 255));
+        btnCatequista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
+        btnCatequista.setText("Catequistas");
+        btnCatequista.setBorder(null);
+        btnCatequista.setFocusable(false);
+        btnCatequista.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCatequista.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton4.setBackground(new java.awt.Color(0, 32, 96));
-        jButton4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/tutores.png"))); // NOI18N
-        jButton4.setText("Tutores");
-        jButton4.setBorder(null);
-        jButton4.setFocusable(false);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnTutor.setBackground(new java.awt.Color(0, 32, 96));
+        btnTutor.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnTutor.setForeground(new java.awt.Color(255, 255, 255));
+        btnTutor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/tutores.png"))); // NOI18N
+        btnTutor.setText("Tutores");
+        btnTutor.setBorder(null);
+        btnTutor.setFocusable(false);
+        btnTutor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnTutor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton5.setBackground(new java.awt.Color(0, 32, 96));
-        jButton5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
-        jButton5.setText("Oraciones");
-        jButton5.setBorder(null);
-        jButton5.setFocusable(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnOracion.setBackground(new java.awt.Color(0, 32, 96));
+        btnOracion.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnOracion.setForeground(new java.awt.Color(255, 255, 255));
+        btnOracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
+        btnOracion.setText("Oraciones");
+        btnOracion.setBorder(null);
+        btnOracion.setFocusable(false);
+        btnOracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout menuLayout = new javax.swing.GroupLayout(menu);
         menu.setLayout(menuLayout);
@@ -94,27 +94,27 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(menuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                    .addComponent(btnAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCatequista, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnTutor, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                    .addComponent(btnOracion, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
                 .addContainerGap())
         );
         menuLayout.setVerticalGroup(
             menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
+                .addComponent(btnAlumno)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(btnCatequista)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(btnTutor)
                 .addGap(18, 18, 18)
-                .addComponent(jButton5)
+                .addComponent(btnOracion)
                 .addContainerGap(102, Short.MAX_VALUE))
         );
 
-        jPanel1.add(menu, java.awt.BorderLayout.LINE_START);
+        contenido.add(menu, java.awt.BorderLayout.LINE_START);
 
         menu_superior.setBackground(new java.awt.Color(0, 176, 240));
         menu_superior.setPreferredSize(new java.awt.Dimension(908, 40));
@@ -138,32 +138,32 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jLabel1))
         );
 
-        jPanel1.add(menu_superior, java.awt.BorderLayout.PAGE_START);
+        contenido.add(menu_superior, java.awt.BorderLayout.PAGE_START);
 
-        content.setBackground(new java.awt.Color(255, 255, 255));
+        panelContenido.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
-        content.setLayout(contentLayout);
-        contentLayout.setHorizontalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelContenidoLayout = new javax.swing.GroupLayout(panelContenido);
+        panelContenido.setLayout(panelContenidoLayout);
+        panelContenidoLayout.setHorizontalGroup(
+            panelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 796, Short.MAX_VALUE)
         );
-        contentLayout.setVerticalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelContenidoLayout.setVerticalGroup(
+            panelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 507, Short.MAX_VALUE)
         );
 
-        jPanel1.add(content, java.awt.BorderLayout.CENTER);
+        contenido.add(panelContenido, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(contenido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(contenido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -205,14 +205,14 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel content;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    public javax.swing.JButton btnAlumno;
+    public javax.swing.JButton btnCatequista;
+    public javax.swing.JButton btnOracion;
+    public javax.swing.JButton btnTutor;
+    public javax.swing.JPanel contenido;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel menu;
     private javax.swing.JPanel menu_superior;
+    public javax.swing.JPanel panelContenido;
     // End of variables declaration//GEN-END:variables
 }
