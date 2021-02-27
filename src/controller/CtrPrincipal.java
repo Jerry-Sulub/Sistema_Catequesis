@@ -5,8 +5,10 @@
  */
 package controller;
 
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import view.Alumno;
 import view.Catequista;
 import view.Principal;
 
@@ -29,14 +31,20 @@ public class CtrPrincipal implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent arg0) {
         if(arg0.getSource()==this.principal.btnAlumno){
-            System.out.println("Se selecciono al alumno");
+                Alumno alumno = new Alumno();
+                this.principal.contenido.remove(this.principal.panelContenido);
+                this.principal.panelContenido = alumno;
+                this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
+                this.principal.panelContenido.revalidate();
+                this.principal.panelContenido.repaint();
         }else{
             if(arg0.getSource()==this.principal.btnCatequista){
                 Catequista catequista = new Catequista();
                 this.principal.contenido.remove(this.principal.panelContenido);
-                this.principal.contenido.add(catequista);
-                this.principal.contenido.revalidate();
-                this.principal.contenido.repaint();
+                this.principal.panelContenido = catequista;
+                this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
+                this.principal.panelContenido.revalidate();
+                this.principal.panelContenido.repaint();
             }
         }
     }
