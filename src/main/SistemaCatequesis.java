@@ -5,6 +5,8 @@
  */
 package main;
 
+import view.Principal;
+
 /**
  *
  * @author Gerardo
@@ -16,6 +18,8 @@ public class SistemaCatequesis {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Principal principal = new Principal();
+        principal.setVisible(true);
     }
     
 }
