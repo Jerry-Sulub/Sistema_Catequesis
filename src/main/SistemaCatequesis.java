@@ -5,7 +5,9 @@
  */
 package main;
 
+import controller.CtrCargaInicial;
 import controller.CtrPrincipal;
+import view.CargaInicial;
 import view.Principal;
 
 /**
@@ -19,9 +21,8 @@ public class SistemaCatequesis {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Principal principal = new Principal();
-        principal.setVisible(true);
-        CtrPrincipal cr = new CtrPrincipal(principal);
+        CargaInicial carga = new CargaInicial();
+        CtrCargaInicial ctrCarga = new CtrCargaInicial(carga);
     }
     
 }

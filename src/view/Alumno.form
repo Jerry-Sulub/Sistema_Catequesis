@@ -49,7 +49,7 @@
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jPanel2" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <Component id="txfBuscarIdenti" pref="244" max="32767" attributes="0"/>
+                              <Component id="txfBuscarIdenti" pref="251" max="32767" attributes="0"/>
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="btnBuscar" min="-2" pref="121" max="-2" attributes="0"/>
                           </Group>

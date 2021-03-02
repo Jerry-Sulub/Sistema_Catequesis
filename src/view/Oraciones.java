@@ -28,31 +28,294 @@ public class Oraciones extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jtlAlumnos = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        txfNombreA = new javax.swing.JTextField();
+        jcomGradoA = new javax.swing.JComboBox<>();
+        txfNombreA1 = new javax.swing.JTextField();
+        txfIdentAlumno = new javax.swing.JTextField();
+        btnBuscar = new javax.swing.JButton();
+        btnBuscar1 = new javax.swing.JButton();
+        btnBuscar2 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        txfNombreA2 = new javax.swing.JTextField();
+        btnBuscar3 = new javax.swing.JButton();
+        jcomOraciones = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 32, 96));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("ORACIONES");
+        jLabel1.setText("Oraciones");
+
+        jPanel2.setBackground(new java.awt.Color(150, 215, 244));
+
+        jtlAlumnos.setBackground(new java.awt.Color(225, 255, 250));
+        jtlAlumnos.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jtlAlumnos.setForeground(new java.awt.Color(0, 32, 96));
+        jtlAlumnos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jtlAlumnos);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel1.setBackground(new java.awt.Color(150, 215, 244));
+
+        txfNombreA.setBackground(new java.awt.Color(225, 255, 250));
+        txfNombreA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfNombreA.setForeground(new java.awt.Color(0, 32, 96));
+        txfNombreA.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfNombreA.setText("Nombre completo");
+        txfNombreA.setBorder(null);
+        txfNombreA.setPreferredSize(new java.awt.Dimension(62, 25));
+
+        jcomGradoA.setBackground(new java.awt.Color(225, 255, 250));
+        jcomGradoA.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcomGradoA.setForeground(new java.awt.Color(0, 32, 96));
+        jcomGradoA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una oración", "1", "2", "3", "4", "5", "6" }));
+
+        txfNombreA1.setBackground(new java.awt.Color(225, 255, 250));
+        txfNombreA1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfNombreA1.setForeground(new java.awt.Color(0, 32, 96));
+        txfNombreA1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfNombreA1.setText("Apellido Completo");
+        txfNombreA1.setBorder(null);
+        txfNombreA1.setPreferredSize(new java.awt.Dimension(62, 25));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txfNombreA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jcomGradoA, 0, 329, Short.MAX_VALUE)
+                    .addComponent(txfNombreA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(31, 31, 31))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txfNombreA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(txfNombreA1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jcomGradoA, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79))
+        );
+
+        txfIdentAlumno.setBackground(new java.awt.Color(225, 255, 250));
+        txfIdentAlumno.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfIdentAlumno.setForeground(new java.awt.Color(0, 32, 96));
+        txfIdentAlumno.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfIdentAlumno.setText("Matricula del alumno");
+        txfIdentAlumno.setBorder(null);
+        txfIdentAlumno.setPreferredSize(new java.awt.Dimension(62, 25));
+
+        btnBuscar.setBackground(new java.awt.Color(150, 215, 244));
+        btnBuscar.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnBuscar.setForeground(new java.awt.Color(0, 32, 96));
+        btnBuscar.setText("Actualizar");
+        btnBuscar.setBorder(null);
+        btnBuscar.setFocusable(false);
+        btnBuscar.setPreferredSize(new java.awt.Dimension(45, 25));
+
+        btnBuscar1.setBackground(new java.awt.Color(150, 215, 244));
+        btnBuscar1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnBuscar1.setForeground(new java.awt.Color(0, 32, 96));
+        btnBuscar1.setText("Limpiar");
+        btnBuscar1.setBorder(null);
+        btnBuscar1.setFocusable(false);
+        btnBuscar1.setPreferredSize(new java.awt.Dimension(45, 25));
+
+        btnBuscar2.setBackground(new java.awt.Color(150, 215, 244));
+        btnBuscar2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnBuscar2.setForeground(new java.awt.Color(0, 32, 96));
+        btnBuscar2.setText("Buscar");
+        btnBuscar2.setBorder(null);
+        btnBuscar2.setFocusable(false);
+        btnBuscar2.setPreferredSize(new java.awt.Dimension(45, 25));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Editar oraciones", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14), new java.awt.Color(0, 32, 96))); // NOI18N
+
+        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton1.setText("Agregar");
+
+        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton2.setText("Eliminar");
+
+        jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton3.setText("Actualizar");
+
+        txfNombreA2.setBackground(new java.awt.Color(225, 255, 250));
+        txfNombreA2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        txfNombreA2.setForeground(new java.awt.Color(0, 32, 96));
+        txfNombreA2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txfNombreA2.setText("Nombre completo");
+        txfNombreA2.setBorder(null);
+        txfNombreA2.setPreferredSize(new java.awt.Dimension(62, 25));
+
+        btnBuscar3.setBackground(new java.awt.Color(150, 215, 244));
+        btnBuscar3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnBuscar3.setForeground(new java.awt.Color(0, 32, 96));
+        btnBuscar3.setText("Buscar");
+        btnBuscar3.setBorder(null);
+        btnBuscar3.setFocusable(false);
+        btnBuscar3.setPreferredSize(new java.awt.Dimension(45, 25));
+
+        jcomOraciones.setBackground(new java.awt.Color(225, 255, 250));
+        jcomOraciones.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcomOraciones.setForeground(new java.awt.Color(0, 32, 96));
+        jcomOraciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una oración", "1", "2", "3", "4", "5", "6" }));
+        jcomOraciones.setEnabled(false);
+        jcomOraciones.setFocusable(false);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jRadioButton1)
+                .addGap(68, 68, 68)
+                .addComponent(jRadioButton2)
+                .addGap(72, 72, 72)
+                .addComponent(jRadioButton3)
+                .addGap(184, 184, 184))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addComponent(txfNombreA2, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnBuscar3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addContainerGap(86, Short.MAX_VALUE)
+                    .addComponent(jcomOraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(273, Short.MAX_VALUE)))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2)
+                    .addComponent(jRadioButton3))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txfNombreA2, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE)
+                    .addComponent(btnBuscar3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                    .addContainerGap(47, Short.MAX_VALUE)
+                    .addComponent(jcomOraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(39, Short.MAX_VALUE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(txfIdentAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnBuscar2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(15, 15, 15))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addContainerGap(457, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txfIdentAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                            .addComponent(btnBuscar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                            .addComponent(btnBuscar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnBuscar1;
+    public javax.swing.JButton btnBuscar2;
+    public javax.swing.JButton btnBuscar3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    public javax.swing.JRadioButton jRadioButton1;
+    public javax.swing.JRadioButton jRadioButton2;
+    public javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JComboBox<String> jcomGradoA;
+    public javax.swing.JComboBox<String> jcomOraciones;
+    public javax.swing.JTable jtlAlumnos;
+    public javax.swing.JTextField txfIdentAlumno;
+    public javax.swing.JTextField txfNombreA;
+    public javax.swing.JTextField txfNombreA1;
+    public javax.swing.JTextField txfNombreA2;
     // End of variables declaration//GEN-END:variables
 }

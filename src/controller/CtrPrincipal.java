@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import view.Alumno;
 import view.Catequista;
+import view.Oraciones;
 import view.Principal;
 import view.Tutores;
 
@@ -23,6 +24,7 @@ public class CtrPrincipal implements ActionListener{
     
     public CtrPrincipal(Principal principal){
         this.principal = principal;
+        this.principal.setVisible(true);
         this.principal.btnAlumno.addActionListener(this);
         this.principal.btnCatequista.addActionListener(this);
         this.principal.btnTutor.addActionListener(this);
@@ -54,6 +56,15 @@ public class CtrPrincipal implements ActionListener{
                     this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                     this.principal.panelContenido.revalidate();
                     this.principal.panelContenido.repaint();
+                }else{
+                    if(arg0.getSource()==this.principal.btnOracion){
+                        Oraciones oraciones = new Oraciones();
+                        this.principal.contenido.remove(this.principal.panelContenido);
+                        this.principal.panelContenido = oraciones;
+                        this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
+                        this.principal.panelContenido.revalidate();
+                        this.principal.panelContenido.repaint();
+                    }
                 }
             }
         }
