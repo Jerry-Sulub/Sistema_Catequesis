@@ -23,6 +23,7 @@ public class SistemaCatequesis {
         // TODO code application logic here
         CargaInicial carga = new CargaInicial();
         CtrCargaInicial ctrCarga = new CtrCargaInicial(carga);
+        System.out.println("Hello world");
     }
     
 }
