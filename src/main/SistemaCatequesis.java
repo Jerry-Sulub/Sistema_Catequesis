@@ -22,8 +22,6 @@ public class SistemaCatequesis {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Conexion con = new Conexion();
-        con.getConexion();
         CargaInicial carga = new CargaInicial();
         CtrCargaInicial ctrCarga = new CtrCargaInicial(carga);
         System.out.println("Hello world");

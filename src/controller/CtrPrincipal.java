@@ -6,8 +6,13 @@
 package controller;
 
 import java.awt.BorderLayout;
+import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+import javax.swing.JFrame;
 import view.Alumno;
 import view.Catequista;
 import view.Oraciones;
@@ -18,7 +23,7 @@ import view.Tutores;
  *
  * @author Gerardo
  */
-public class CtrPrincipal implements ActionListener{
+public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionListener{
     
     private Principal principal;
     
@@ -29,6 +34,11 @@ public class CtrPrincipal implements ActionListener{
         this.principal.btnCatequista.addActionListener(this);
         this.principal.btnTutor.addActionListener(this);
         this.principal.btnOracion.addActionListener(this);
+        this.principal.lblTitulo.addMouseListener(this);
+        this.principal.lblTitulo.addMouseMotionListener(this);
+        this.principal.lblCerrar.addMouseListener(this);
+        this.principal.lblMaximizar.addMouseListener(this);
+        this.principal.lblminimizar.addMouseListener(this);
     }
     
     @Override
@@ -68,6 +78,70 @@ public class CtrPrincipal implements ActionListener{
                 }
             }
         }
+    }
+    
+    private boolean max = false;
+    
+    @Override
+    public void mouseClicked(MouseEvent arg0) {
+        if(arg0.getSource()==this.principal.lblCerrar){
+            System.exit(0);
+        }else{
+            if(arg0.getSource()==this.principal.lblMaximizar && max!=true){
+               this.principal.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            }else{
+               if(arg0.getSource()==this.principal.lblMaximizar && max!=false){
+                   
+               }
+            }
+        }
+        if(arg0.getSource()==this.principal.lblminimizar){
+            this.principal.setExtendedState(JFrame.ICONIFIED);
+        }
+    }
+    
+    private int x=0, y=0;
+    @Override
+    public void mousePressed(MouseEvent arg0) {
+        x = arg0.getX();
+        y = arg0.getY();
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent arg0) {
+        
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent arg0) {
+        if(arg0.getSource()==this.principal.lblCerrar){
+            this.principal.lblCerrar.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        }else{
+            if(arg0.getSource()==this.principal.lblMaximizar){
+               this.principal.lblMaximizar.setCursor(new Cursor(Cursor.HAND_CURSOR));
+            }else{
+                if(arg0.getSource()==this.principal.lblminimizar){
+                   this.principal.lblminimizar.setCursor(new Cursor(Cursor.HAND_CURSOR));
+                }
+            }
+        }
+    }
+
+    @Override
+    public void mouseExited(MouseEvent arg0) {
+   
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent arg0) {
+        int x2 = arg0.getXOnScreen();
+        int y2 = arg0.getYOnScreen();
+        this.principal.setLocation(x2-x, y2-y);
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent arg0) {
+        
     }
     
 }

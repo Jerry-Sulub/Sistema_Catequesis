@@ -37,10 +37,14 @@ public class Principal extends javax.swing.JFrame {
         btnTutor = new javax.swing.JButton();
         btnOracion = new javax.swing.JButton();
         menu_superior = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
+        lblMaximizar = new javax.swing.JLabel();
+        lblCerrar = new javax.swing.JLabel();
+        lblminimizar = new javax.swing.JLabel();
         panelContenido = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         contenido.setLayout(new java.awt.BorderLayout());
 
@@ -53,6 +57,7 @@ public class Principal extends javax.swing.JFrame {
         btnAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/alumno.png"))); // NOI18N
         btnAlumno.setText("Alumnos");
         btnAlumno.setBorder(null);
+        btnAlumno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAlumno.setFocusable(false);
         btnAlumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAlumno.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -63,6 +68,7 @@ public class Principal extends javax.swing.JFrame {
         btnCatequista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
         btnCatequista.setText("Catequistas");
         btnCatequista.setBorder(null);
+        btnCatequista.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCatequista.setFocusable(false);
         btnCatequista.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCatequista.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -73,6 +79,7 @@ public class Principal extends javax.swing.JFrame {
         btnTutor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/tutores.png"))); // NOI18N
         btnTutor.setText("Tutores");
         btnTutor.setBorder(null);
+        btnTutor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTutor.setFocusable(false);
         btnTutor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnTutor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -83,6 +90,7 @@ public class Principal extends javax.swing.JFrame {
         btnOracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
         btnOracion.setText("Oraciones");
         btnOracion.setBorder(null);
+        btnOracion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOracion.setFocusable(false);
         btnOracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -119,23 +127,43 @@ public class Principal extends javax.swing.JFrame {
         menu_superior.setBackground(new java.awt.Color(0, 176, 240));
         menu_superior.setPreferredSize(new java.awt.Dimension(908, 40));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("ADMINISTRACIÓN CATEQUESIS");
+        lblTitulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitulo.setText(" ADMINISTRACIÓN CATEQUESIS");
+
+        lblMaximizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMaximizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/maximizar_pantalla.png"))); // NOI18N
+
+        lblCerrar.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        lblCerrar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/cerrar_v.png"))); // NOI18N
+
+        lblminimizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblminimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/img/menu/minimizar_v.png"))); // NOI18N
 
         javax.swing.GroupLayout menu_superiorLayout = new javax.swing.GroupLayout(menu_superior);
         menu_superior.setLayout(menu_superiorLayout);
         menu_superiorLayout.setHorizontalGroup(
             menu_superiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menu_superiorLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1))
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblminimizar, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblMaximizar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2))
         );
         menu_superiorLayout.setVerticalGroup(
             menu_superiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menu_superiorLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1))
+                .addGroup(menu_superiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(lblminimizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblMaximizar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                    .addComponent(lblTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         contenido.add(menu_superior, java.awt.BorderLayout.PAGE_START);
@@ -210,9 +238,12 @@ public class Principal extends javax.swing.JFrame {
     public javax.swing.JButton btnOracion;
     public javax.swing.JButton btnTutor;
     public javax.swing.JPanel contenido;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel lblCerrar;
+    public javax.swing.JLabel lblMaximizar;
+    public javax.swing.JLabel lblTitulo;
+    public javax.swing.JLabel lblminimizar;
     private javax.swing.JPanel menu;
-    private javax.swing.JPanel menu_superior;
+    public javax.swing.JPanel menu_superior;
     public javax.swing.JPanel panelContenido;
     // End of variables declaration//GEN-END:variables
 }
