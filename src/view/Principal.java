@@ -36,6 +36,10 @@ public class Principal extends javax.swing.JFrame {
         btnCatequista = new javax.swing.JButton();
         btnTutor = new javax.swing.JButton();
         btnOracion = new javax.swing.JButton();
+        separadorAlumno = new javax.swing.JSeparator();
+        separadorCatequista = new javax.swing.JSeparator();
+        separadorTutor = new javax.swing.JSeparator();
+        separadorOracion = new javax.swing.JSeparator();
         menu_superior = new javax.swing.JPanel();
         lblTitulo = new javax.swing.JLabel();
         lblMaximizar = new javax.swing.JLabel();
@@ -50,6 +54,7 @@ public class Principal extends javax.swing.JFrame {
 
         menu.setBackground(new java.awt.Color(0, 32, 96));
         menu.setPreferredSize(new java.awt.Dimension(125, 417));
+        menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAlumno.setBackground(new java.awt.Color(0, 32, 96));
         btnAlumno.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -61,6 +66,7 @@ public class Principal extends javax.swing.JFrame {
         btnAlumno.setFocusable(false);
         btnAlumno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAlumno.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(btnAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 105, -1));
 
         btnCatequista.setBackground(new java.awt.Color(0, 32, 96));
         btnCatequista.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -72,6 +78,7 @@ public class Principal extends javax.swing.JFrame {
         btnCatequista.setFocusable(false);
         btnCatequista.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCatequista.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(btnCatequista, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 122, 105, -1));
 
         btnTutor.setBackground(new java.awt.Color(0, 32, 96));
         btnTutor.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -83,6 +90,7 @@ public class Principal extends javax.swing.JFrame {
         btnTutor.setFocusable(false);
         btnTutor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnTutor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(btnTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 236, 105, -1));
 
         btnOracion.setBackground(new java.awt.Color(0, 32, 96));
         btnOracion.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -94,33 +102,23 @@ public class Principal extends javax.swing.JFrame {
         btnOracion.setFocusable(false);
         btnOracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(btnOracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 105, -1));
 
-        javax.swing.GroupLayout menuLayout = new javax.swing.GroupLayout(menu);
-        menu.setLayout(menuLayout);
-        menuLayout.setHorizontalGroup(
-            menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAlumno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCatequista, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnTutor, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                    .addComponent(btnOracion, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        menuLayout.setVerticalGroup(
-            menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnAlumno)
-                .addGap(18, 18, 18)
-                .addComponent(btnCatequista)
-                .addGap(18, 18, 18)
-                .addComponent(btnTutor)
-                .addGap(18, 18, 18)
-                .addComponent(btnOracion)
-                .addContainerGap(102, Short.MAX_VALUE))
-        );
+        separadorAlumno.setBackground(new java.awt.Color(0, 176, 240));
+        separadorAlumno.setForeground(new java.awt.Color(0, 176, 240));
+        menu.add(separadorAlumno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 101, 105, 3));
+
+        separadorCatequista.setBackground(new java.awt.Color(0, 176, 240));
+        separadorCatequista.setForeground(new java.awt.Color(0, 176, 240));
+        menu.add(separadorCatequista, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 213, 105, 5));
+
+        separadorTutor.setBackground(new java.awt.Color(0, 176, 240));
+        separadorTutor.setForeground(new java.awt.Color(0, 176, 240));
+        menu.add(separadorTutor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 327, 105, 5));
+
+        separadorOracion.setBackground(new java.awt.Color(0, 176, 240));
+        separadorOracion.setForeground(new java.awt.Color(0, 176, 240));
+        menu.add(separadorOracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 441, 105, 10));
 
         contenido.add(menu, java.awt.BorderLayout.LINE_START);
 
@@ -146,14 +144,14 @@ public class Principal extends javax.swing.JFrame {
         menu_superiorLayout.setHorizontalGroup(
             menu_superiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menu_superiorLayout.createSequentialGroup()
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblminimizar, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+                .addComponent(lblminimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblMaximizar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2))
+                .addContainerGap())
         );
         menu_superiorLayout.setVerticalGroup(
             menu_superiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,7 +172,7 @@ public class Principal extends javax.swing.JFrame {
         panelContenido.setLayout(panelContenidoLayout);
         panelContenidoLayout.setHorizontalGroup(
             panelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 796, Short.MAX_VALUE)
+            .addGap(0, 804, Short.MAX_VALUE)
         );
         panelContenidoLayout.setVerticalGroup(
             panelContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,5 +243,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel menu;
     public javax.swing.JPanel menu_superior;
     public javax.swing.JPanel panelContenido;
+    public javax.swing.JSeparator separadorAlumno;
+    public javax.swing.JSeparator separadorCatequista;
+    public javax.swing.JSeparator separadorOracion;
+    public javax.swing.JSeparator separadorTutor;
     // End of variables declaration//GEN-END:variables
 }

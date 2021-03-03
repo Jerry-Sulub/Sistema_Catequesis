@@ -6,12 +6,15 @@
 package controller;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import view.Alumno;
 import view.Catequista;
@@ -39,6 +42,11 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
         this.principal.lblCerrar.addMouseListener(this);
         this.principal.lblMaximizar.addMouseListener(this);
         this.principal.lblminimizar.addMouseListener(this);
+        
+        this.principal.separadorAlumno.setVisible(false);
+        this.principal.separadorCatequista.setVisible(false);
+        this.principal.separadorTutor.setVisible(false);
+        this.principal.separadorOracion.setVisible(false);
     }
     
     @Override
@@ -50,6 +58,24 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
                 this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                 this.principal.panelContenido.revalidate();
                 this.principal.panelContenido.repaint();
+                /*SEPARADORES*/
+                this.principal.separadorAlumno.setVisible(true);
+                this.principal.separadorCatequista.setVisible(false);
+                this.principal.separadorTutor.setVisible(false);
+                this.principal.separadorOracion.setVisible(false);
+                /*CAMBIO DE ICONO*/
+                /*ALUMNO*/
+                this.principal.btnAlumno.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/alumno_selected.png")));
+                this.principal.btnAlumno.setForeground(new Color(0,176,240));
+                /*CATEQUISTA*/
+                this.principal.btnCatequista.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
+                this.principal.btnCatequista.setForeground(new Color(255, 255, 255));
+                /*PADRES*/
+                this.principal.btnTutor.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/tutores.png")));
+                this.principal.btnTutor.setForeground(new Color(255, 255, 255));
+                /*ORACIONES*/
+                this.principal.btnOracion.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
+                this.principal.btnOracion.setForeground(new Color(255, 255, 255));
         }else{
             if(arg0.getSource()==this.principal.btnCatequista){
                 Catequista catequista = new Catequista();
@@ -58,6 +84,24 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
                 this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                 this.principal.panelContenido.revalidate();
                 this.principal.panelContenido.repaint();
+                /*SEPARADORES*/
+                this.principal.separadorAlumno.setVisible(false);
+                this.principal.separadorCatequista.setVisible(true);
+                this.principal.separadorTutor.setVisible(false);
+                this.principal.separadorOracion.setVisible(false);
+                /*CAMBIO DE ICONO*/
+                /*ALUMNO*/
+                this.principal.btnAlumno.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/alumno.png")));
+                this.principal.btnAlumno.setForeground(new Color(255, 255, 255));
+                /*CATEQUISTA*/
+                this.principal.btnCatequista.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/Catequista_selected.png"))); // NOI18N
+                this.principal.btnCatequista.setForeground(new Color(0,176,240));
+                /*PADRES*/
+                this.principal.btnTutor.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/tutores.png")));
+                this.principal.btnTutor.setForeground(new Color(255, 255, 255));
+                /*ORACIONES*/
+                this.principal.btnOracion.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
+                this.principal.btnOracion.setForeground(new Color(255, 255, 255));
             }else{
                 if(arg0.getSource()==this.principal.btnTutor){
                     Tutores tutores = new Tutores();
@@ -66,6 +110,24 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
                     this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                     this.principal.panelContenido.revalidate();
                     this.principal.panelContenido.repaint();
+                    /*SEPARADORES*/
+                    this.principal.separadorAlumno.setVisible(false);
+                    this.principal.separadorCatequista.setVisible(false);
+                    this.principal.separadorTutor.setVisible(true);
+                    this.principal.separadorOracion.setVisible(false);
+                    /*CAMBIO DE ICONO*/
+                    /*ALUMNO*/
+                    this.principal.btnAlumno.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/alumno.png")));
+                    this.principal.btnAlumno.setForeground(new Color(255, 255, 255));
+                    /*CATEQUISTA*/
+                    this.principal.btnCatequista.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
+                    this.principal.btnCatequista.setForeground(new Color(255, 255, 255));
+                    /*PADRES*/
+                    this.principal.btnTutor.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/tutores_selected.png")));
+                    this.principal.btnTutor.setForeground(new Color(0,176,240));
+                    /*ORACIONES*/
+                    this.principal.btnOracion.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/oraciones.png"))); // NOI18N
+                    this.principal.btnOracion.setForeground(new Color(255, 255, 255));                    
                 }else{
                     if(arg0.getSource()==this.principal.btnOracion){
                         Oraciones oraciones = new Oraciones();
@@ -74,6 +136,24 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
                         this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                         this.principal.panelContenido.revalidate();
                         this.principal.panelContenido.repaint();
+                        /*SEPARADORES*/
+                        this.principal.separadorAlumno.setVisible(false);
+                        this.principal.separadorCatequista.setVisible(false);
+                        this.principal.separadorTutor.setVisible(false);
+                        this.principal.separadorOracion.setVisible(true);
+                        /*CAMBIO DE ICONO*/
+                        /*ALUMNO*/
+                        this.principal.btnAlumno.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/alumno.png")));
+                        this.principal.btnAlumno.setForeground(new Color(255, 255, 255));
+                        /*CATEQUISTA*/
+                        this.principal.btnCatequista.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/Catequista.png"))); // NOI18N
+                        this.principal.btnCatequista.setForeground(new Color(255, 255, 255));
+                        /*PADRES*/
+                        this.principal.btnTutor.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/tutores.png")));
+                        this.principal.btnTutor.setForeground(new Color(255, 255, 255));
+                        /*ORACIONES*/
+                        this.principal.btnOracion.setIcon(new ImageIcon(getClass().getResource("/view/img/menu/oraciones_selected.png"))); // NOI18N
+                        this.principal.btnOracion.setForeground(new Color(0,176,240));
                     }
                 }
             }
@@ -89,9 +169,12 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
         }else{
             if(arg0.getSource()==this.principal.lblMaximizar && max!=true){
                this.principal.setExtendedState(JFrame.MAXIMIZED_BOTH);
+               this.max = true;
             }else{
                if(arg0.getSource()==this.principal.lblMaximizar && max!=false){
-                   
+                   this.principal.setSize(921, 547);
+                   this.principal.setLocationRelativeTo(null);
+                   this.max=false;
                }
             }
         }
