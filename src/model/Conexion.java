@@ -29,4 +29,12 @@ public class Conexion {
         }        
         return conexion;
     }
+    
+    public void closeConexion(){
+        try {
+            this.conexion.close();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ha ocurrido una excepción en: "+e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
 }

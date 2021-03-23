@@ -89,13 +89,13 @@ public class Tutores extends javax.swing.JPanel {
         jtlAlumnos.setForeground(new java.awt.Color(0, 32, 96));
         jtlAlumnos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Matricula Alumno", "Nombre Tutor", "Apellido Tutor", "Parentezco", "Celular"
             }
         ));
         jScrollPane2.setViewportView(jtlAlumnos);

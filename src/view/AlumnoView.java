@@ -9,12 +9,12 @@ package view;
  *
  * @author Gerardo
  */
-public class Alumno extends javax.swing.JPanel {
+public class AlumnoView extends javax.swing.JPanel {
 
     /**
      * Creates new form Alumno
      */
-    public Alumno() {
+    public AlumnoView() {
         initComponents();
     }
 
@@ -39,8 +39,8 @@ public class Alumno extends javax.swing.JPanel {
         txfApeA = new javax.swing.JTextField();
         txfEdadA = new javax.swing.JTextField();
         jcomGradoA = new javax.swing.JComboBox<>();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        JRBautizo = new javax.swing.JRadioButton();
+        JRBSBautizo = new javax.swing.JRadioButton();
         btnAgregarA = new javax.swing.JButton();
         btnEliminarA = new javax.swing.JButton();
         btnActualizarA = new javax.swing.JButton();
@@ -78,13 +78,13 @@ public class Alumno extends javax.swing.JPanel {
         jtlAlumnos.setForeground(new java.awt.Color(0, 32, 96));
         jtlAlumnos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Matricula", "Nombre", "Apellido", "Grado", "Butizo"
             }
         ));
         jScrollPane2.setViewportView(jtlAlumnos);
@@ -146,15 +146,15 @@ public class Alumno extends javax.swing.JPanel {
         jcomGradoA.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grado", "1", "2", "3", "4", "5", "6" }));
         jcomGradoA.setPreferredSize(new java.awt.Dimension(40, 26));
 
-        jCheckBox1.setBackground(new java.awt.Color(150, 215, 244));
-        jCheckBox1.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(0, 32, 96));
-        jCheckBox1.setText("Con bautizo");
+        JRBautizo.setBackground(new java.awt.Color(150, 215, 244));
+        JRBautizo.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        JRBautizo.setForeground(new java.awt.Color(0, 32, 96));
+        JRBautizo.setText("Con bautizo");
 
-        jCheckBox2.setBackground(new java.awt.Color(150, 215, 244));
-        jCheckBox2.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
-        jCheckBox2.setForeground(new java.awt.Color(0, 32, 96));
-        jCheckBox2.setText("Sin bautizo");
+        JRBSBautizo.setBackground(new java.awt.Color(150, 215, 244));
+        JRBSBautizo.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        JRBSBautizo.setForeground(new java.awt.Color(0, 32, 96));
+        JRBSBautizo.setText("Sin bautizo");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -172,11 +172,13 @@ public class Alumno extends javax.swing.JPanel {
                                 .addComponent(jcomGradoA, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(42, 42, 42))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jCheckBox1)
-                                .addGap(60, 60, 60)))
+                                .addComponent(JRBautizo)
+                                .addGap(47, 47, 47)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox2)
-                            .addComponent(txfEdadA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(txfEdadA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(JRBSBautizo)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(31, 31, 31))
         );
         jPanel1Layout.setVerticalGroup(
@@ -188,13 +190,11 @@ public class Alumno extends javax.swing.JPanel {
                 .addComponent(txfNombreA, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txfApeA, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(JRBautizo)
+                    .addComponent(JRBSBautizo))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jCheckBox2, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jcomGradoA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txfEdadA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -291,19 +291,19 @@ public class Alumno extends javax.swing.JPanel {
                             .addComponent(btnAgregarA, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnEliminarA, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnActualizarA, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 46, Short.MAX_VALUE))))
+                        .addGap(0, 42, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JRadioButton JRBSBautizo;
+    public javax.swing.JRadioButton JRBautizo;
     public javax.swing.JButton btnActualizarA;
     public javax.swing.JButton btnAgregarA;
     public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnEliminarA;
     public javax.swing.JButton btnLimpiar;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

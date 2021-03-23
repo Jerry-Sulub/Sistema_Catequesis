@@ -24,7 +24,7 @@ public class CtrCargaInicial implements MouseListener{
     
     public CtrCargaInicial(CargaInicial cargaInicial){
         this.cargaInicial = cargaInicial;
-        this.cargaInicial.screenCarga.addMouseListener(this);
+        //this.cargaInicial.screenCarga.addMouseListener(this);
         cargaScreen();
     }
     
@@ -67,7 +67,7 @@ public class CtrCargaInicial implements MouseListener{
 
     @Override
     public void mouseEntered(MouseEvent arg0) {
-        this.cargaInicial.screenCarga.setCursor(new Cursor(Cursor.WAIT_CURSOR));
+        //this.cargaInicial.screenCarga.setCursor(new Cursor(Cursor.WAIT_CURSOR));
     }
 
     @Override

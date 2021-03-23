@@ -203,13 +203,13 @@ public class Catequista extends javax.swing.JPanel {
         jtlCat.setForeground(new java.awt.Color(0, 32, 96));
         jtlCat.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Id Catequista", "Nombre", "Apellido", "Grado", "Teléfono"
             }
         ));
         jScrollPane2.setViewportView(jtlCat);

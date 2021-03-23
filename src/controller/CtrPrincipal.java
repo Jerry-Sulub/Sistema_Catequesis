@@ -8,7 +8,6 @@ package controller;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -16,11 +15,13 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import view.Alumno;
+import view.AlumnoView;
 import view.Catequista;
 import view.Oraciones;
 import view.Principal;
 import view.Tutores;
+import model.AlumnoOperation;
+import model.AlumnoModel;
 
 /**
  *
@@ -52,9 +53,12 @@ public class CtrPrincipal implements ActionListener, MouseListener, MouseMotionL
     @Override
     public void actionPerformed(ActionEvent arg0) {
         if(arg0.getSource()==this.principal.btnAlumno){
-                Alumno alumno = new Alumno();
+                AlumnoView alumnoView = new AlumnoView();
+                AlumnoModel alumno = new AlumnoModel();
+                AlumnoOperation alumnoModel = new AlumnoOperation();
+                CtrlAlumno ctrAlumno = new CtrlAlumno(alumno, alumnoModel, alumnoView);
                 this.principal.contenido.remove(this.principal.panelContenido);
-                this.principal.panelContenido = alumno;
+                this.principal.panelContenido = alumnoView;
                 this.principal.contenido.add(this.principal.panelContenido, BorderLayout.CENTER);
                 this.principal.panelContenido.revalidate();
                 this.principal.panelContenido.repaint();
